@@ -1,0 +1,543 @@
+{
+  "source_ttl": "/Users/tunde/Documents/MSC_CS/Run-onto-experiments/src/condition_C/onto_matcher/ontology/competence_ontology.ttl",
+  "cv_node_types": [
+    {
+      "label": "Attitude",
+      "uri": "http://purl.org/coreo#Attitude",
+      "comment": "Attitude is a tendency to act (or feel) in a given situation (Maze, 2011) inherent to an individual, based on assumptions, values, and beliefs (Maze, 2011). In general, definitions of attitude take into account the following characteristics: (i) mental state; (ii) values (beliefs,"
+    },
+    {
+      "label": "Evidence",
+      "uri": "http://purl.org/coreo#Evidence",
+      "comment": "Any object (social or not) used to prove a human capability."
+    },
+    {
+      "label": "Field",
+      "uri": "http://purl.org/coreo#Field",
+      "comment": "Knowledge Area"
+    },
+    {
+      "label": "HumanQuality",
+      "uri": "http://purl.org/coreo#HumanQuality",
+      "comment": "Qualities inherent to a person, e.g. age, gender, height, etc."
+    },
+    {
+      "label": "HumanTask",
+      "uri": "http://purl.org/coreo#HumanTask",
+      "comment": "Event performed by a person as a result of the manifestation of his/her human capabilities"
+    },
+    {
+      "label": "HumanTrait",
+      "uri": "http://purl.org/coreo#HumanTrait",
+      "comment": "Traits inherent to an individual, e.g. John's introversion, Paul's interest, Mary's hobbies"
+    },
+    {
+      "label": "Knowledge",
+      "uri": "http://purl.org/coreo#Knowledge",
+      "comment": "Knowledge is typically associated with internal representations of facts, principles, or theories (WESTERA, 2001) by an individual. and that can be manifested through actions."
+    },
+    {
+      "label": "Person",
+      "uri": "http://purl.org/coreo#Person",
+      "comment": "Physical agent that are human being"
+    },
+    {
+      "label": "PersonalCompetence",
+      "uri": "http://purl.org/coreo#PersonalCompetence",
+      "comment": "Competence is a human capability inherent to an individual and formed by the combination of perceptible characteristics, such as the ``well-known'' knowledge, skills, and attitudes (KSA) elements."
+    },
+    {
+      "label": "Proficiency",
+      "uri": "http://purl.org/coreo#Proficiency",
+      "comment": "Intencity or deepness of a human capability. Can be related to level, degree, score, or other quality."
+    },
+    {
+      "label": "Resource",
+      "uri": "http://purl.org/coreo#Resource",
+      "comment": "Any object used in a task by a person as manifestation of a human capability"
+    },
+    {
+      "label": "Skill",
+      "uri": "http://purl.org/coreo#Skill",
+      "comment": "Skill is a human capability of an individual to perform a task (discrete unit of work) well (RODRIGUES et al, 2021), not strongly related to a context."
+    },
+    {
+      "label": "TaskInput",
+      "uri": "http://purl.org/coreo#TaskInput",
+      "comment": "Artifact used in a task as manifestation of a human capability"
+    },
+    {
+      "label": "TaskOutput",
+      "uri": "http://purl.org/coreo#TaskOutput",
+      "comment": "Artifact created or changed in a task as manifestation of a human capability"
+    }
+  ],
+  "jd_node_types": [
+    {
+      "label": "ArtifactType",
+      "uri": "http://purl.org/coreo#ArtifactType",
+      "comment": "A job requirement specifying a needed Artifact (tool, document, or deliverable). Artifact used in a task as manifestation of a human capability / Artifact created or changed in a task as manifestation of a human capability"
+    },
+    {
+      "label": "AttitudeType",
+      "uri": "http://purl.org/coreo#AttitudeType",
+      "comment": "A job requirement specifying a needed Attitude. Attitude is a tendency to act (or feel) in a given situation (Maze, 2011) inherent to an individual, based on assumptions, values, and beliefs (Maze, 2011). In general, definitions of attitude take into account the following characteristics: (i) mental state; (ii) values (beliefs,"
+    },
+    {
+      "label": "KnowledgeType",
+      "uri": "http://purl.org/coreo#KnowledgeType",
+      "comment": "A job requirement specifying a needed Knowledge area. Knowledge is typically associated with internal representations of facts, principles, or theories (WESTERA, 2001) by an individual. and that can be manifested through actions."
+    },
+    {
+      "label": "ResourceType",
+      "uri": "http://purl.org/coreo#ResourceType",
+      "comment": "A job requirement specifying a needed Resource. Any object used in a task by a person as manifestation of a human capability"
+    },
+    {
+      "label": "SkillType",
+      "uri": "http://purl.org/coreo#SkillType",
+      "comment": "A job requirement specifying a needed Skill. Skill is a human capability of an individual to perform a task (discrete unit of work) well (RODRIGUES et al, 2021), not strongly related to a context."
+    },
+    {
+      "label": "TaskType",
+      "uri": "http://purl.org/coreo#TaskType",
+      "comment": "A job requirement specifying a needed Task. Event performed by a person as a result of the manifestation of his/her human capabilities"
+    }
+  ],
+  "instantiation_pairs": [
+    {
+      "jd_type": "ArtifactType",
+      "cv_type": "Artifact"
+    },
+    {
+      "jd_type": "CapabilityRequiringRole",
+      "cv_type": "Person"
+    },
+    {
+      "jd_type": "CompetenceType",
+      "cv_type": "PersonalCompetence"
+    },
+    {
+      "jd_type": "PersonalCompetenceType",
+      "cv_type": "PersonalCompetence"
+    },
+    {
+      "jd_type": "HumanAspectPhase",
+      "cv_type": "HumanAspect"
+    },
+    {
+      "jd_type": "HumanAspectType",
+      "cv_type": "HumanAspect"
+    },
+    {
+      "jd_type": "HumanCapabilityType",
+      "cv_type": "HumanCapability"
+    },
+    {
+      "jd_type": "ResourceType",
+      "cv_type": "Resource"
+    },
+    {
+      "jd_type": "SkillType",
+      "cv_type": "Skill"
+    },
+    {
+      "jd_type": "TaskType",
+      "cv_type": "HumanTask"
+    }
+  ],
+  "relations": {
+    "intra_cv": [
+      {
+        "label": "CapabilityInheresInPerson",
+        "uri": "http://purl.org/coreo#inheresIn_1",
+        "comment": "relates the coreo:HumanCapability to the correspondent coreo:Person",
+        "domain": "HumanCapability",
+        "range": "Person",
+        "type": "intra_cv"
+      },
+      {
+        "label": "activatesTask",
+        "uri": "http://purl.org/coreo#competenceContextContributedToTriggerHumanTask",
+        "comment": "Identifies a coreo:HumanTask that the coreo:CompetenceContext contributed to trigger.",
+        "domain": "CompetenceContext",
+        "range": "HumanTask",
+        "type": "intra_cv"
+      },
+      {
+        "label": "broughtAboutHumanTask",
+        "uri": "http://purl.org/coreo#broughtAboutHumanTask",
+        "comment": "",
+        "domain": "CompetenceOutcome",
+        "range": "HumanTask",
+        "type": "intra_cv"
+      },
+      {
+        "label": "contributesTo",
+        "uri": "http://purl.org/coreo#contributesTo",
+        "comment": "Describes the contribution relation between a coreo:HumanQuality and a coreo:PersonalCompetence",
+        "domain": "HumanQuality",
+        "range": "PersonalCompetence",
+        "type": "intra_cv"
+      },
+      {
+        "label": "evidencedBy",
+        "uri": "http://purl.org/coreo#evidencedBy",
+        "comment": "evidances of a coreo:HumanAspect",
+        "domain": "HumanAspect",
+        "range": "Evidence",
+        "type": "intra_cv"
+      },
+      {
+        "label": "hasAttitude",
+        "uri": "http://purl.org/coreo#personalCompetenceHasAttitude",
+        "comment": "parthood relation between a competence and attitude",
+        "domain": "PersonalCompetence",
+        "range": "Attitude",
+        "type": "intra_cv"
+      },
+      {
+        "label": "hasCompetence",
+        "uri": "http://purl.org/coreo#personalCompetenceHasPersonalCompetence",
+        "comment": "parthood relation between a competence and other competence",
+        "domain": "PersonalCompetence",
+        "range": "PersonalCompetence",
+        "type": "intra_cv"
+      },
+      {
+        "label": "hasHumanAspect",
+        "uri": "http://purl.org/coreo#personalCompetenceHasHumanAspect",
+        "comment": "parthood relation between a competence and human aspect",
+        "domain": "PersonalCompetence",
+        "range": "HumanAspect",
+        "type": "intra_cv"
+      },
+      {
+        "label": "hasKnowledge",
+        "uri": "http://purl.org/coreo#personalCompetenceHasKnowledge",
+        "comment": "parthood relation between a competence and knowledge",
+        "domain": "PersonalCompetence",
+        "range": "Knowledge",
+        "type": "intra_cv"
+      },
+      {
+        "label": "hasSkill",
+        "uri": "http://purl.org/coreo#personalCompetenceHasSkill",
+        "comment": "parthood relation between a competence and skill",
+        "domain": "PersonalCompetence",
+        "range": "Skill",
+        "type": "intra_cv"
+      },
+      {
+        "label": "inheresInHumanCapability",
+        "uri": "http://purl.org/coreo#inheresIn",
+        "comment": "relates a coreo:Proficiency to the correspondent coreo:HumanCapability",
+        "domain": "Proficiency",
+        "range": "HumanCapability",
+        "type": "intra_cv"
+      },
+      {
+        "label": "inheresInPerson",
+        "uri": "http://purl.org/coreo#inheresIn_2",
+        "comment": "relates the coreo:HumanAspect to the correspondent coreo:Person",
+        "domain": "HumanAspect",
+        "range": "Person",
+        "type": "intra_cv"
+      },
+      {
+        "label": "performed",
+        "uri": "http://purl.org/coreo#performed",
+        "comment": "participation of a person in a human task",
+        "domain": "Person",
+        "range": "HumanTask",
+        "type": "intra_cv"
+      },
+      {
+        "label": "standsInContext",
+        "uri": "http://purl.org/coreo#standsIn",
+        "comment": "Details the coreo:Resource that stands in a coreo:CompetenceContext",
+        "domain": "Resource",
+        "range": "CompetenceContext",
+        "type": "intra_cv"
+      },
+      {
+        "label": "standsInContext",
+        "uri": "http://purl.org/coreo#standsIn_1",
+        "comment": "Details the coreo:Artifact that stands in a coreo:CompetenceContext",
+        "domain": "Artifact",
+        "range": "CompetenceContext",
+        "type": "intra_cv"
+      },
+      {
+        "label": "standsInOutcome",
+        "uri": "http://purl.org/coreo#standsIn_2",
+        "comment": "Details the coreo:Artifact that stands in a coreo:CompetenceOutcome",
+        "domain": "Artifact",
+        "range": "CompetenceOutcome",
+        "type": "intra_cv"
+      },
+      {
+        "label": "wasGeneratedIn",
+        "uri": "http://purl.org/coreo#wasGeneratedIn",
+        "comment": "output generation from a coreo:HumanTask",
+        "domain": "TaskOutput",
+        "range": "HumanTask",
+        "type": "intra_cv"
+      },
+      {
+        "label": "wasManifestedIn",
+        "uri": "http://purl.org/coreo#wasManifestedIn_1",
+        "comment": "Identifies a coreo:HumanTask in which the coreo:HumanCapability is manifested.",
+        "domain": "HumanCapability",
+        "range": "HumanTask",
+        "type": "intra_cv"
+      },
+      {
+        "label": "wasManifestedInTask",
+        "uri": "http://purl.org/coreo#wasManifestedIn",
+        "comment": "Identifies a coreo:HumanTask in which the coreo:HumanAspect is manifested.",
+        "domain": "HumanAspect",
+        "range": "HumanTask",
+        "type": "intra_cv"
+      },
+      {
+        "label": "wasUsedIn",
+        "uri": "http://purl.org/coreo#wasUsedIn",
+        "comment": "usage of a artifact in a human task as input",
+        "domain": "TaskInput",
+        "range": "HumanTask",
+        "type": "intra_cv"
+      },
+      {
+        "label": "wasUsedIn",
+        "uri": "http://purl.org/coreo#wasUsedIn_1",
+        "comment": "usage of an object in a human task as a resource",
+        "domain": "Resource",
+        "range": "HumanTask",
+        "type": "intra_cv"
+      }
+    ],
+    "intra_jd": [
+      {
+        "label": "bringsAbout",
+        "uri": "http://purl.org/coreo#bringsAbout",
+        "comment": "Details the SituationType that a coreo:TaskType can result",
+        "domain": "TaskType",
+        "range": "SituationType",
+        "type": "intra_jd"
+      },
+      {
+        "label": "characterizedBy",
+        "uri": "http://purl.org/coreo#characterizedBy",
+        "comment": "Relationship used to detail a coreo:ArtifactType",
+        "domain": "ArtifactType",
+        "range": "MomentType",
+        "type": "intra_jd"
+      },
+      {
+        "label": "concernsArtifact",
+        "uri": "http://purl.org/coreo#concerns",
+        "comment": "Relationship used to detail a coreo:TaskType",
+        "domain": "TaskType",
+        "range": "ArtifactType",
+        "type": "intra_jd"
+      },
+      {
+        "label": "concernsResource",
+        "uri": "http://purl.org/coreo#concerns_1",
+        "comment": "Relationship used to detail a coreo:TaskType",
+        "domain": "TaskType",
+        "range": "ResourceType",
+        "type": "intra_jd"
+      },
+      {
+        "label": "constitutesAspect",
+        "uri": "http://purl.org/coreo#constitutes",
+        "comment": "Describes the constitutive relationship between coreo:HumanAspectTypes manifested as parthood relationships between their instances",
+        "domain": "HumanAspectType",
+        "range": "HumanAspectType",
+        "type": "intra_jd"
+      },
+      {
+        "label": "constitutesType",
+        "uri": "http://purl.org/coreo#constitutesType",
+        "comment": "Describes the constitutive relationship between types manifested as parthood relationships between their instances",
+        "domain": "Type",
+        "range": "Type",
+        "type": "intra_jd"
+      },
+      {
+        "label": "definedInTermsOf",
+        "uri": "http://purl.org/coreo#definedInTermsOf",
+        "comment": "Relationship used to detail a coreo:HumanCapabilityType",
+        "domain": "HumanCapabilityType",
+        "range": "TaskType",
+        "type": "intra_jd"
+      },
+      {
+        "label": "dependsOnArtifact",
+        "uri": "http://purl.org/coreo#dependsOn_1",
+        "comment": "Describes the dependence relationship between types manifested as dependence relationships between their instances",
+        "domain": "ArtifactType",
+        "range": "ArtifactType",
+        "type": "intra_jd"
+      },
+      {
+        "label": "dependsOnHumanAspect",
+        "uri": "http://purl.org/coreo#dependsOn_2",
+        "comment": "Describes the dependence relationship between types manifested as dependence relationships between their instances",
+        "domain": "HumanAspectType",
+        "range": "HumanAspectType",
+        "type": "intra_jd"
+      },
+      {
+        "label": "dependsOnRole",
+        "uri": "http://purl.org/coreo#dependsOn_3",
+        "comment": "Describes the dependence relationship between types manifested as dependence relationships between their instances",
+        "domain": "CapabilityRequiringRole",
+        "range": "CapabilityRequiringRole",
+        "type": "intra_jd"
+      },
+      {
+        "label": "dependsOnTask",
+        "uri": "http://purl.org/coreo#dependsOn",
+        "comment": "Describes the dependence relationship between types manifested as dependence relationships between their instances",
+        "domain": "TaskType",
+        "range": "TaskType",
+        "type": "intra_jd"
+      },
+      {
+        "label": "dependsOnType",
+        "uri": "http://purl.org/coreo#dependsOnType",
+        "comment": "Describes the dependence relationship between types manifested as dependence relationships between their instances",
+        "domain": "Type",
+        "range": "Type",
+        "type": "intra_jd"
+      },
+      {
+        "label": "describedBy",
+        "uri": "http://purl.org/coreo#describedBy",
+        "comment": "Relationship used to detail a type",
+        "domain": "Type",
+        "range": "Type",
+        "type": "intra_jd"
+      },
+      {
+        "label": "enablesSituationType",
+        "uri": "http://purl.org/coreo#enables",
+        "comment": "Relationship used to detail types of contexts that activates HumanCapabilityTypes",
+        "domain": "HumanCapabilityType",
+        "range": "SituationType",
+        "type": "intra_jd"
+      },
+      {
+        "label": "isDefinedBy",
+        "uri": "http://purl.org/coreo#isDefinedBy",
+        "comment": "Relationship used to detail a coreo:HumanCapabilityType",
+        "domain": "CapabilityRequiringRole",
+        "range": "HumanCapabilityType",
+        "type": "intra_jd"
+      },
+      {
+        "label": "specializes",
+        "uri": "http://purl.org/coreo#specializes_1",
+        "comment": "specialization relation between types symbolizing the types that are instances of other type",
+        "domain": "Type",
+        "range": "Type",
+        "type": "intra_jd"
+      },
+      {
+        "label": "specializesArtifact",
+        "uri": "http://purl.org/coreo#specializes",
+        "comment": "specialization relation between types symbolizing the types that are instances of other type",
+        "domain": "ArtifactType",
+        "range": "ArtifactType",
+        "type": "intra_jd"
+      },
+      {
+        "label": "specializesAspect",
+        "uri": "http://purl.org/coreo#specializes_2",
+        "comment": "specialization relation between types symbolizing the types that are instances of other type",
+        "domain": "HumanAspectType",
+        "range": "HumanAspectType",
+        "type": "intra_jd"
+      },
+      {
+        "label": "specializesRole",
+        "uri": "http://purl.org/coreo#specializes_4",
+        "comment": "specialization relation between types symbolizing the types that are instances of other type",
+        "domain": "CapabilityRequiringRole",
+        "range": "CapabilityRequiringRole",
+        "type": "intra_jd"
+      },
+      {
+        "label": "specializesTask",
+        "uri": "http://purl.org/coreo#specializes_3",
+        "comment": "specialization relation between types symbolizing the types that are instances of other type",
+        "domain": "TaskType",
+        "range": "TaskType",
+        "type": "intra_jd"
+      }
+    ],
+    "cross_side": [
+      {
+        "label": "hasField",
+        "uri": "http://purl.org/coreo#capabilityRequiringRoleHasField",
+        "comment": "Describes the field of a coreo:CapabilityRequiringRole",
+        "domain": "CapabilityRequiringRole",
+        "range": "Field",
+        "type": "cross_side"
+      }
+    ]
+  },
+  "superclass_map": {
+    "ArtifactType": [
+      "ObjectType"
+    ],
+    "Attitude": [
+      "HumanAspect"
+    ],
+    "AttitudeType": [
+      "HumanAspectType",
+      "AspectType"
+    ],
+    "HumanQuality": [
+      "HumanAspect"
+    ],
+    "HumanTrait": [
+      "HumanAspect"
+    ],
+    "Knowledge": [
+      "HumanAspect"
+    ],
+    "KnowledgeType": [
+      "HumanAspectType",
+      "AspectType"
+    ],
+    "Person": [
+      "Agent"
+    ],
+    "PersonalCompetence": [
+      "HumanCapability",
+      "HumanAspect"
+    ],
+    "ResourceType": [
+      "ObjectType"
+    ],
+    "Skill": [
+      "HumanCapability",
+      "HumanAspect"
+    ],
+    "SkillType": [
+      "HumanCapabilityType",
+      "HumanAspectType",
+      "AspectType"
+    ],
+    "TaskInput": [
+      "Artifact"
+    ],
+    "TaskOutput": [
+      "Artifact"
+    ]
+  }
+}

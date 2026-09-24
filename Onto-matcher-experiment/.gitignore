@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+.env
+
+
+# Data files
+data/condition_A/
+data/condition_E/
+data/analysed/
+data/counterfactual/
+data/raw/
+data/metadata/
+data/type_examples.json
+data/inspect.html
+data/metric_results/
+
+# Generated job files
+job_files/**/*.job
+
+# Logs
+*.log
+
+visualize_graph.py
+sync.sh
+copy_run.py
+comparison_to_latex.py
+src/build_experiment_dataset.py
+
+job_files

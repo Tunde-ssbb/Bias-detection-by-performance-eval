@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+.build_data_venv/
+.DS_Store
+
+annotation_analysis.py
+competence_annotator.py
+
+output/
+annotations/
+data/Onet_text_files/
+
+data/final_data/final_final_test_oneitem.jsonl
+data/final_data/final_test_3_and_styles.jsonl
+data/final_data/final_test_commented_files.jsonl
+data/final_data/final_test_new_resume_instruction.jsonl
+data/final_data/final_test_styles.jsonl
+data/final_data/final_test_threeitems.jsonl
+data/final_data/final_test_v4_prompts.jsonl
+data/final_data/final_test.jsonl
